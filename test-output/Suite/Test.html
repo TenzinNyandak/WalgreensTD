@@ -1,0 +1,171 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Aug 18 16:56:21 EDT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>41 seconds (41908 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.walgreens.qa.register.RegistrationTestData.register()'><b>register</b><br>Test class: com.walgreens.qa.register.RegistrationTestData<br>Parameters: com.walgreens.qa.utils.RegistrationData@c827db<br/>
+<a href="#Output-967531000" onClick='toggleBox("Output-967531000", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-967531000" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-967531000">
+Waiting for the element to be clickable ---> [[ChromeDriver: chrome on MAC (80fa9e6d116985d5904e6fbc1273fe01)] -> xpath: //strong[contains(text(),'Account')]]<br><br/>
+[[ChromeDriver: chrome on MAC (80fa9e6d116985d5904e6fbc1273fe01)] -> xpath: //strong[contains(text(),'Account')]] : This element has been clicked<br><br/>
+Waiting for the element to be clickable ---> [[ChromeDriver: chrome on MAC (80fa9e6d116985d5904e6fbc1273fe01)] -> xpath: //a[@id='pf-dropdown-register']]<br><br/>
+[[ChromeDriver: chrome on MAC (80fa9e6d116985d5904e6fbc1273fe01)] -> xpath: //a[@id='pf-dropdown-register']] : This element has been clicked<br><br/>
+[[ChromeDriver: chrome on MAC (80fa9e6d116985d5904e6fbc1273fe01)] -> xpath: //h1[text()='Create Your Walgreens.com Account']] : has value ---> Create Your Walgreens.com Account<br><br/>
+John : This values has been passed into ---> [[ChromeDriver: chrome on MAC (80fa9e6d116985d5904e6fbc1273fe01)] -> xpath: //input[@id='wag-RXUser-firstname']]<br><br/>
+Wallace : This values has been passed into ---> [[ChromeDriver: chrome on MAC (80fa9e6d116985d5904e6fbc1273fe01)] -> xpath: //input[@id='wag-RXUser-lastname']]<br><br/>
+johnwallace@gmail.com : This values has been passed into ---> [[ChromeDriver: chrome on MAC (80fa9e6d116985d5904e6fbc1273fe01)] -> xpath: //input[@id='wag-email']]<br><br/>
+Wall4567 : This values has been passed into ---> [[ChromeDriver: chrome on MAC (80fa9e6d116985d5904e6fbc1273fe01)] -> xpath: //input[@id='wag-password']]<br><br/>
+[[ChromeDriver: chrome on MAC (80fa9e6d116985d5904e6fbc1273fe01)] -> xpath: //input[@id='wag-terms-checkbox']] : This element has been clicked<br><br/>
+Waiting for the element to be clickable ---> [[ChromeDriver: chrome on MAC (80fa9e6d116985d5904e6fbc1273fe01)] -> xpath: //a[@id='wag-rxuser-continue-btm']]<br><br/>
+[[ChromeDriver: chrome on MAC (80fa9e6d116985d5904e6fbc1273fe01)] -> xpath: //a[@id='wag-rxuser-continue-btm']] : This element has been clicked<br><br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.walgreens.qa.register.RegistrationTestData@77ec78b9</td></tr>
+<tr>
+<td title='com.walgreens.qa.register.RegistrationTestData.register()'><b>register</b><br>Test class: com.walgreens.qa.register.RegistrationTestData<br>Parameters: com.walgreens.qa.utils.RegistrationData@260f2144<br/>
+<a href="#Output-557342904" onClick='toggleBox("Output-557342904", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-557342904" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-557342904">
+Waiting for the element to be clickable ---> [[ChromeDriver: chrome on MAC (4bad821705a6d38c8703dc792868942a)] -> xpath: //strong[contains(text(),'Account')]]<br><br/>
+[[ChromeDriver: chrome on MAC (4bad821705a6d38c8703dc792868942a)] -> xpath: //strong[contains(text(),'Account')]] : This element has been clicked<br><br/>
+Waiting for the element to be clickable ---> [[ChromeDriver: chrome on MAC (4bad821705a6d38c8703dc792868942a)] -> xpath: //a[@id='pf-dropdown-register']]<br><br/>
+[[ChromeDriver: chrome on MAC (4bad821705a6d38c8703dc792868942a)] -> xpath: //a[@id='pf-dropdown-register']] : This element has been clicked<br><br/>
+[[ChromeDriver: chrome on MAC (4bad821705a6d38c8703dc792868942a)] -> xpath: //h1[text()='Create Your Walgreens.com Account']] : has value ---> Create Your Walgreens.com Account<br><br/>
+Steven : This values has been passed into ---> [[ChromeDriver: chrome on MAC (4bad821705a6d38c8703dc792868942a)] -> xpath: //input[@id='wag-RXUser-firstname']]<br><br/>
+Smith : This values has been passed into ---> [[ChromeDriver: chrome on MAC (4bad821705a6d38c8703dc792868942a)] -> xpath: //input[@id='wag-RXUser-lastname']]<br><br/>
+stevensmith@gmail.com : This values has been passed into ---> [[ChromeDriver: chrome on MAC (4bad821705a6d38c8703dc792868942a)] -> xpath: //input[@id='wag-email']]<br><br/>
+Smith369 : This values has been passed into ---> [[ChromeDriver: chrome on MAC (4bad821705a6d38c8703dc792868942a)] -> xpath: //input[@id='wag-password']]<br><br/>
+[[ChromeDriver: chrome on MAC (4bad821705a6d38c8703dc792868942a)] -> xpath: //input[@id='wag-terms-checkbox']] : This element has been clicked<br><br/>
+Waiting for the element to be clickable ---> [[ChromeDriver: chrome on MAC (4bad821705a6d38c8703dc792868942a)] -> xpath: //a[@id='wag-rxuser-continue-btm']]<br><br/>
+[[ChromeDriver: chrome on MAC (4bad821705a6d38c8703dc792868942a)] -> xpath: //a[@id='wag-rxuser-continue-btm']] : This element has been clicked<br><br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.walgreens.qa.register.RegistrationTestData@77ec78b9</td></tr>
+<tr>
+<td title='com.walgreens.qa.register.RegistrationTestExcel2D.register()'><b>register</b><br>Test class: com.walgreens.qa.register.RegistrationTestExcel2D<br>Parameters: Create Your Walgreens.com Account, John, Wallace, johnwallace@gmail.com, Wall4567<br/>
+<a href="#Output-553056396" onClick='toggleBox("Output-553056396", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-553056396" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-553056396">
+Waiting for the element to be clickable ---> [[ChromeDriver: chrome on MAC (a84ecc214a8aa9757287298bdb23e6e0)] -> xpath: //strong[contains(text(),'Account')]]<br><br/>
+[[ChromeDriver: chrome on MAC (a84ecc214a8aa9757287298bdb23e6e0)] -> xpath: //strong[contains(text(),'Account')]] : This element has been clicked<br><br/>
+Waiting for the element to be clickable ---> [[ChromeDriver: chrome on MAC (a84ecc214a8aa9757287298bdb23e6e0)] -> xpath: //a[@id='pf-dropdown-register']]<br><br/>
+[[ChromeDriver: chrome on MAC (a84ecc214a8aa9757287298bdb23e6e0)] -> xpath: //a[@id='pf-dropdown-register']] : This element has been clicked<br><br/>
+[[ChromeDriver: chrome on MAC (a84ecc214a8aa9757287298bdb23e6e0)] -> xpath: //h1[text()='Create Your Walgreens.com Account']] : has value ---> Create Your Walgreens.com Account<br><br/>
+John : This values has been passed into ---> [[ChromeDriver: chrome on MAC (a84ecc214a8aa9757287298bdb23e6e0)] -> xpath: //input[@id='wag-RXUser-firstname']]<br><br/>
+Wallace : This values has been passed into ---> [[ChromeDriver: chrome on MAC (a84ecc214a8aa9757287298bdb23e6e0)] -> xpath: //input[@id='wag-RXUser-lastname']]<br><br/>
+johnwallace@gmail.com : This values has been passed into ---> [[ChromeDriver: chrome on MAC (a84ecc214a8aa9757287298bdb23e6e0)] -> xpath: //input[@id='wag-email']]<br><br/>
+Wall4567 : This values has been passed into ---> [[ChromeDriver: chrome on MAC (a84ecc214a8aa9757287298bdb23e6e0)] -> xpath: //input[@id='wag-password']]<br><br/>
+[[ChromeDriver: chrome on MAC (a84ecc214a8aa9757287298bdb23e6e0)] -> xpath: //input[@id='wag-terms-checkbox']] : This element has been clicked<br><br/>
+Waiting for the element to be clickable ---> [[ChromeDriver: chrome on MAC (a84ecc214a8aa9757287298bdb23e6e0)] -> xpath: //a[@id='wag-rxuser-continue-btm']]<br><br/>
+[[ChromeDriver: chrome on MAC (a84ecc214a8aa9757287298bdb23e6e0)] -> xpath: //a[@id='wag-rxuser-continue-btm']] : This element has been clicked<br><br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.walgreens.qa.register.RegistrationTestExcel2D@1a3869f4</td></tr>
+<tr>
+<td title='com.walgreens.qa.register.RegistrationTestExcel2D.register()'><b>register</b><br>Test class: com.walgreens.qa.register.RegistrationTestExcel2D<br>Parameters: Create Your Walgreens.com Account, James, Dean, james_dean@gmail.com, Jamdea369<br/>
+<a href="#Output-1567857145" onClick='toggleBox("Output-1567857145", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1567857145" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1567857145">
+Waiting for the element to be clickable ---> [[ChromeDriver: chrome on MAC (c5550155e89df87f2fe85b3ed2089cee)] -> xpath: //strong[contains(text(),'Account')]]<br><br/>
+[[ChromeDriver: chrome on MAC (c5550155e89df87f2fe85b3ed2089cee)] -> xpath: //strong[contains(text(),'Account')]] : This element has been clicked<br><br/>
+Waiting for the element to be clickable ---> [[ChromeDriver: chrome on MAC (c5550155e89df87f2fe85b3ed2089cee)] -> xpath: //a[@id='pf-dropdown-register']]<br><br/>
+[[ChromeDriver: chrome on MAC (c5550155e89df87f2fe85b3ed2089cee)] -> xpath: //a[@id='pf-dropdown-register']] : This element has been clicked<br><br/>
+[[ChromeDriver: chrome on MAC (c5550155e89df87f2fe85b3ed2089cee)] -> xpath: //h1[text()='Create Your Walgreens.com Account']] : has value ---> Create Your Walgreens.com Account<br><br/>
+James : This values has been passed into ---> [[ChromeDriver: chrome on MAC (c5550155e89df87f2fe85b3ed2089cee)] -> xpath: //input[@id='wag-RXUser-firstname']]<br><br/>
+Dean : This values has been passed into ---> [[ChromeDriver: chrome on MAC (c5550155e89df87f2fe85b3ed2089cee)] -> xpath: //input[@id='wag-RXUser-lastname']]<br><br/>
+james_dean@gmail.com : This values has been passed into ---> [[ChromeDriver: chrome on MAC (c5550155e89df87f2fe85b3ed2089cee)] -> xpath: //input[@id='wag-email']]<br><br/>
+Jamdea369 : This values has been passed into ---> [[ChromeDriver: chrome on MAC (c5550155e89df87f2fe85b3ed2089cee)] -> xpath: //input[@id='wag-password']]<br><br/>
+[[ChromeDriver: chrome on MAC (c5550155e89df87f2fe85b3ed2089cee)] -> xpath: //input[@id='wag-terms-checkbox']] : This element has been clicked<br><br/>
+Waiting for the element to be clickable ---> [[ChromeDriver: chrome on MAC (c5550155e89df87f2fe85b3ed2089cee)] -> xpath: //a[@id='wag-rxuser-continue-btm']]<br><br/>
+[[ChromeDriver: chrome on MAC (c5550155e89df87f2fe85b3ed2089cee)] -> xpath: //a[@id='wag-rxuser-continue-btm']] : This element has been clicked<br><br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.walgreens.qa.register.RegistrationTestExcel2D@1a3869f4</td></tr>
+</table><p>
+</body>
+</html>

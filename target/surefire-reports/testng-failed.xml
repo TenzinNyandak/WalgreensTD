@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [com.walgreens.qa.cancelRegistration.CancelRegistrationTest]" verbose="0">
+  <test thread-count="5" name="Command line test(failed)" verbose="0">
+    <classes>
+      <class name="com.walgreens.qa.cancelRegistration.CancelRegistrationTest">
+        <methods>
+          <include name="cancelRegistration"/>
+          <include name="setup"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.walgreens.qa.cancelRegistration.CancelRegistrationTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [com.walgreens.qa.cancelRegistration.CancelRegistrationTest] -->
