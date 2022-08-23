@@ -2,6 +2,9 @@ package com.walgreens.qa.utils;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -46,7 +49,7 @@ public class ExcelUtil {
 		String[][] data = null;
 		int yRowsNumber = 0;
 		int totalCellNumber = sheet.getRow(0).getLastCellNum() - 2;
-		
+
 		for (int i = 1; i <= sheet.getLastRowNum(); i++) {
 			try {
 				if (sheet.getRow(i).getCell(1).getStringCellValue().equalsIgnoreCase("Y")) {
@@ -55,16 +58,16 @@ public class ExcelUtil {
 			} catch (NullPointerException e) {
 			}
 		}
-		
+
 		data = new String[yRowsNumber][totalCellNumber];
-		
+
 		int row = 0;
-		for(int i = 1; i <= sheet.getLastRowNum(); i++) {
+		for (int i = 1; i <= sheet.getLastRowNum(); i++) {
 			try {
 				if (sheet.getRow(i).getCell(1).getStringCellValue().equalsIgnoreCase("Y")) {
- 					for(int j = 2; j < sheet.getRow(i).getLastCellNum(); j++) {
+					for (int j = 2; j < sheet.getRow(i).getLastCellNum(); j++) {
 						String value = sheet.getRow(i).getCell(j).getStringCellValue();
-						data[row][j-2] = value;
+						data[row][j - 2] = value;
 					}
 					row++;
 				}
@@ -73,21 +76,38 @@ public class ExcelUtil {
 		}
 		return data;
 	}
-	
-/*	public static void main(String[] args) {
-		Configuration configuration = new Configuration(null);
-		String path = configuration.getConfig("excelPath");
-		String sheetName = configuration.getConfig("excelSheet");
-		ExcelUtil excelUtil = new ExcelUtil(path, sheetName);
-		String[][] arr = excelUtil.dataObjects();
-		System.out.println(arr.length);
-		for(String [] sarr: arr) {
-			for(String s: sarr) {
-				System.out.print(s + " | ");
-			}
-			System.out.println();
-		}
-	}
-*/
+	/*
+	 * public static void main(String[] args) { Configuration configuration = new
+	 * Configuration(null); String path = configuration.getConfig("excelPath");
+	 * String sheetName = configuration.getConfig("excelSheet"); ExcelUtil excelUtil
+	 * = new ExcelUtil(path, sheetName); String[][] arr = excelUtil.dataObjects();
+	 * System.out.println(arr.length); for(String [] sarr: arr) { for(String s:
+	 * sarr) { System.out.print(s + " | "); } System.out.println(); } }
+	 */
 
+	public Map<Integer, Map<String, String>> dataMap() {
+		Map<Integer, Map<String, String>> maps = new HashMap<Integer, Map<String, String>>();
+		int yRows = 0;
+		for (int i = 1; i <= sheet.getLastRowNum(); i++) {
+			Map<String, String> map = new HashMap<String, String>();
+			for (int j = 0; j < sheet.getRow(0).getLastCellNum(); j++) {
+				try {
+					String key = sheet.getRow(0).getCell(j).getStringCellValue();
+					String value = sheet.getRow(i).getCell(j).getStringCellValue();
+					map.put(key, value);
+				} catch (NullPointerException | IllegalStateException e) {
+					// TODO: handle exception
+				}
+			}
+			try {
+				if (map.get("Execution").equalsIgnoreCase("Y")) {
+					maps.put(yRows, map);
+					yRows++;
+				}
+			} catch (NullPointerException e) {
+
+			}
+		}
+		return maps;
+	}
 }

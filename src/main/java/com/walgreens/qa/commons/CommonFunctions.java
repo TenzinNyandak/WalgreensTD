@@ -11,9 +11,11 @@ import com.walgreens.qa.reporting.Loggers;
 
 public class CommonFunctions {
 
+	WebDriver driver;
 	CommonWaits waits;
 
-	public CommonFunctions(CommonWaits waits) {
+	public CommonFunctions(WebDriver driver,CommonWaits waits) {
+		this.driver = driver;
 		this.waits = waits;
 	}
 
@@ -102,5 +104,10 @@ public class CommonFunctions {
 			Loggers.getLog(element + " : This element Not Found");
 			Assert.fail();
 		}
+	}
+	
+	public void failText() {
+		Loggers.getLog(getClass().getMethods()[0].getName() + " ---> has failed");
+		Assert.fail();
 	}
 }

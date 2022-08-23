@@ -1,7 +1,7 @@
 package com.walgreens.qa.register;
 
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.testng.annotations.DataProvider;
 import com.walgreens.qa.base.BaseClass;
 import com.walgreens.qa.utils.ExcelUtil;
 
